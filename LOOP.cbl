@@ -11,18 +11,18 @@
 000000 *> : License - NON       : U 2024/02/06 : :   ::::!!!1!!1!!!1!!!::     <*
 000000 *> :.....................:..............: :      ::::!::!:::!::::      <*
 000000 *> .......................................:........................... <*
-000100	IDENTIFICATION DIVISION.
-000200	PROGRAM-ID. EXAMPLE-LOOP.
-000300	DATA DIVISION.
-000400		WORKING-STORAGE SECTION.
-000500			77 VAR_ECX PIC 99.
-000600	PROCEDURE DIVISION.
-000700	0001-MAIN.
-000800		SET VAR_ECX TO 0
-000900		*> ........................ [v] LOOP [v] ........................ <*
-001000		PERFORM UNTIL VAR_ECX >= 10
-001100			ADD 1 TO VAR_ECX
-001200			DISPLAY 'Test - ' VAR_ECX
-001300		END-PERFORM.
-001400		*> ........................ [^] LOOP [^] ........................ <*
-001500		STOP RUN.
+000100 IDENTIFICATION DIVISION.
+000200 PROGRAM-ID. EXAMPLE-LOOP.
+000300 DATA DIVISION.
+000401 WORKING-STORAGE SECTION.
+000502 77 VAR_ECX PIC 99.
+000600 PROCEDURE DIVISION.
+000700 0001-MAIN.
+000801 SET VAR_ECX TO 0
+000901 *> ........................ [v] LOOP [v] ........................ <*
+001001 PERFORM UNTIL VAR_ECX >= 10
+001102 ADD 1 TO VAR_ECX
+001202 DISPLAY 'Test - ' VAR_ECX
+001301 END-PERFORM.
+001401 *> ........................ [^] LOOP [^] ........................ <*
+001501 STOP RUN.
